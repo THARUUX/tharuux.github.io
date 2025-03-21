@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Blog Details - Gerold - Personal Portfolio Tailwind CSS Template
+    </title>
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome-pro.min.css" />
+    <link rel="stylesheet" href="./assets/css/flaticon_gerold.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/backToTop.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/odometer-theme-default.css" />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/backToTop.css" />
+    <link rel="stylesheet" href="./assets/css/lightcase.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="font-sora dark:bg-dark-color">
+    <!-- Preloader Area Start -->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path
+          id="preloaderSvg"
+          d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"
+        ></path>
+      </svg>
+
+      <div class="preloader-heading">
+        <div class="load-text">
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader Area End -->
+    <!-- theme controller -->
+    <div
+      class="fixed top-[200px] lg:top-[300px] transition-all duration-300 right-[-50px] hover:right-0 z-4xl"
+    >
+      <button
+        class="theme-controller w-90px h-10 bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-l-full text-whiteColor px-10px flex items-center transition-all duration-300 font-sora"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-10px w-5 block dark:hidden"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          ></path>
+        </svg>
+        <span class="text-base block dark:hidden">Dark</span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="hidden mr-10px w-5 dark:block"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"
+          ></path>
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+          ></circle>
+        </svg>
+        <span class="text-base hidden dark:block">Light</span>
+      </button>
+    </div>
+    <!-- start: Back To Top -->
+    <div class="progress-wrap" id="scrollUp">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- header area  -->
+    <header class="header-area header-absolute">
+      <div class="pt-15px xl:pt-5 pb-5 md:pb-30px xl:pb-5 relative">
+        <div class="container">
+          <div class="flex flex-wrap justify-between items-center">
+            <!-- logo and contact email -->
+            <div>
+              <ul class="flex items-center gap-x-15px xl:gap-x-35px">
+                <li>
+                  <a href="index.html" class="logo">
+                    <img
+                      class="w-15 h-15 inline-block"
+                      src="./assets/img/logo/logo.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="hidden md:block">
+                  <a
+                    href="mailto:mail@gerolddesign.com"
+                    class="text-size-15 font-medium text-white-color"
+                    >mail@gerolddesign.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- main menu -->
+            <nav>
+              <ul
+                class="nav flex items-center gap-x-5 xl:gap-x-30px 2xl:gap-x-45px"
+              >
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#services"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Services
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#portfolio"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Works
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#resume"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Resume
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#skills"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Skills
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#testimonials"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Testimonials
+                  </a>
+                </li>
+
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#contact"
+                    class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Contact
+                  </a>
+                </li>
+                <!-- action button -->
+                <li>
+                  <a
+                    href="#"
+                    class="text-size-15 font-bold text-white-color capitalize py-17px px-35px ml-10px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300"
+                    >Hire Me!</a
+                  >
+                </li>
+                <!-- open mobile menu button -->
+                <li class="menu-bar lg:hidden">
+                  <div class="menu-bar">
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <!-- scale-y-0 transition-all duration-500 hover:scale-y-100 -->
+        <div
+          class="mobile-menu absolute left-0 top-full min-h-screen-90 w-full bg-seondary-color block origin-top-left lg:hidden"
+        >
+          <div class="container py-5">
+            <ul class="ml-4">
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#services"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#portfolio"
+                >
+                  Works
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#resume"
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#skills"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#testimonials"
+                >
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- sticky -->
+    <header class="header-area header-2 header-sticky">
+      <div class="py-10px relative">
+        <div class="container">
+          <div class="flex flex-wrap justify-between items-center">
+            <!-- logo and contact email -->
+            <div>
+              <ul class="flex items-center gap-x-15px xl:gap-x-35px">
+                <li>
+                  <a href="index.html" class="logo">
+                    <img
+                      class="w-15 h-15 hidden dark:inline-block"
+                      src="./assets/img/logo/logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-15 h-15 inlin-block dark:hidden"
+                      src="./assets/img/logo/logo-dark.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="hidden md:block">
+                  <a
+                    href="mailto:mail@gerolddesign.com"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color"
+                    >mail@gerolddesign.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- main menu -->
+            <nav>
+              <ul
+                class="nav flex items-center gap-x-5 xl:gap-x-30px 2xl:gap-x-45px"
+              >
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#services"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Services
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#portfolio"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Works
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#resume"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Resume
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#skills"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Skills
+                  </a>
+                </li>
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#testimonials"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Testimonials
+                  </a>
+                </li>
+
+                <li class="nav_item group relative hidden lg:block">
+                  <a
+                    href="index.html#contact"
+                    class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Contact
+                  </a>
+                </li>
+                <!-- action button -->
+                <li>
+                  <a
+                    href="#"
+                    class="text-size-15 font-bold text-white-color capitalize py-17px px-35px ml-10px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300"
+                    >Hire Me!</a
+                  >
+                </li>
+                <!-- open mobile menu button -->
+                <li class="menu-bar lg:hidden">
+                  <div class="menu-bar">
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <!-- scale-y-0 transition-all duration-500 hover:scale-y-100 -->
+        <div
+          class="mobile-menu absolute left-0 top-full min-h-screen-90 w-full bg-seondary-color block origin-top-left lg:hidden"
+        >
+          <div class="container py-5">
+            <ul class="ml-4">
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#services"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#portfolio"
+                >
+                  Works
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#resume"
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#skills"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#testimonials"
+                >
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="text-size-25 text-white-color uppercase leading-1.2 py-15px"
+                  href="index.html#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-wrapper">
+      <!-- breadcrumb -->
+      <section>
+        <div
+          class="hero-breadcurmb pt-150px md:pt-40 lg:pt-200px pb-50px md:pb-60px lg:b-100px bg-[url('../img/breadcrumb/breadcrumb-bg.jpg')] bg-cover bg-center bg-no-repeat relative z-1 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-primary-color-light after:-z-1 after:opacity-70"
+        >
+          <div class="container">
+            <div class="flex flex-col items-center">
+              <h1
+                class="text-size-35 md:text-size-40 lg:text-size-50 font-bold text-white-color mb-15px"
+              >
+                Blog Details
+              </h1>
+              <!-- breadcrumbs -->
+              <ul class="nav flex items-center gap-x-10px">
+                <li class="nav_item group relative">
+                  <a
+                    href="index.html"
+                    class="font-medium text-white-color capitalize relative z-0 after:w-0 after:h-1px after:bg-white-color after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-500 group-hover:after:w-full"
+                    >Home
+                  </a>
+                </li>
+                <li class="nav_item group relative">
+                  <p
+                    class="font-medium text-white-color capitalize relative flex items-center gap-10px"
+                  >
+                    <i class="far fa-long-arrow-right"></i> Blog Details
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blogs details area -->
+      <section id="blogs">
+        <div class="py-60px md:py-20 lg:py-100px xl:py-30 dark:bg-black-color">
+          <div class="container">
+            <div class="lg:grid lg:gap-6 lg:grid-cols-12">
+              <!-- blogs details -->
+              <div class="lg:col-start-1 lg:col-span-8">
+                <article
+                  class="group relative flex flex-col items-center wow fadeInUp"
+                  data-wow-delay=".3s"
+                >
+                  <div class="rounded-lg relative overflow-hidden">
+                    <div class="rounded-t-lg overflow-hidden">
+                      <img src="./assets/img/blog/blog-4.jpg" alt="" />
+                    </div>
+                    <a
+                      href="#"
+                      class="text-size-13 uppercase px-15px py-10px rounded-50px leading-1 absolute top-[15px] right-[15px] text-white-color bg-gradient-secondary-2 bg-200 hover:bg-100"
+                      >Tutorial</a
+                    >
+
+                    <div class="pt-25px md:pt-30px -mt-10px">
+                      <div class="transition-all duration-500">
+                        <div class="relative z-0">
+                          <div class="relative z-10">
+                            <ul
+                              class="flex gap-15px md:gap-25px items-center mb-15px md:mb-5"
+                            >
+                              <li>
+                                <i
+                                  class="fa-light fa-user mr-1 text-primary-color transition-all duration-500"
+                                ></i>
+                                <a
+                                  href="#"
+                                  class="text-primary-color dark:text-white-color hover:text-primary-color transition-all duration-500"
+                                  >By Admin</a
+                                >
+                              </li>
+                              <li
+                                class="text-primary-color dark:text-white-color transition-all duration-500"
+                              >
+                                <i
+                                  class="fa-light fa-calendar-days mr-1 text-primary-color"
+                                ></i>
+                                11 Jul, 2023
+                              </li>
+                              <li>
+                                <i
+                                  class="fa-light fa-comments mr-1 text-primary-color transition-all duration-500"
+                                ></i>
+                                <a
+                                  href="#"
+                                  class="text-primary-color dark:text-white-color hover:text-primary-color transition-all duration-500"
+                                  >Comment (3)</a
+                                >
+                              </li>
+                            </ul>
+                            <h3 class="mb-15px md:mb-5">
+                              <span
+                                class="text-primary-color dark:text-white-color capitalize relative z-0 text-size-22 md:text-3xl font-bold"
+                              >
+                                The Role of Technology in Modern Logistics
+                                Management
+                              </span>
+                            </h3>
+                            <p
+                              class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                            >
+                              Welcome to our blog, where we celebrate our
+                              achievement as an AWS SaaS Competency Partner and
+                              share insights on how we accomplished this
+                              significant milestone.
+                            </p>
+                            <p
+                              class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                            >
+                              As businesses unlock growth opportunities in the
+                              digital age, harnessing the power of cloud
+                              computing has become essential. Amazon Web
+                              Services (AWS) offers the AWS SaaS Competency
+                              Partner program, recognizing companies with
+                              exceptional expertise in delivering
+                              Software-as-a-Service solutions on the AWS
+                              platform.
+                            </p>
+                            <p
+                              class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                            >
+                              In this blog, we will delve into the strategies,
+                              best practices, and key factors that accelerated
+                              our business growth and earned us the prestigious
+                              AWS SaaS Competency Partner status.
+                            </p>
+                            <!-- blog quote -->
+                            <div
+                              class="rounded-lg relative overflow-hidden bg-primary-color-light"
+                            >
+                              <blockquote
+                                class="py-25px px-15px md:p-30px relative block before:content-['\f10e'] before:block before:text-size-40 before:leading-none before:font-fontawesome before:font-light before:relative before:mb-3"
+                              >
+                                <div class="transition-all duration-500">
+                                  <div class="relative z-0">
+                                    <div class="relative z-10">
+                                      <p class="text-white-color mb-15px">
+                                        “Welcome to our blog, where we celebrate
+                                        our achievement as an AWS SaaS
+                                        Competency Partner and share insights on
+                                        how we accomplished this significant
+                                        milestone. As businesses unlock growth
+                                        opportunities in the digital age,
+                                        harnessing the power of cloud computing
+                                        has become essential. Amazon Web
+                                        Services (AWS) offers the AWS SaaS
+                                        Competency.”
+                                      </p>
+                                      <p class="text-white-color mb-2">
+                                        <cite
+                                          class="text-xl relative inline-block before:inline-block before:w-[35px] before:h-0.5 before:bg-primary-color before:rounded-[2px] before:relative before:-top-[6px] before:mr-15px"
+                                          >Silvester Scott</cite
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </blockquote>
+                            </div>
+                            <!-- role of technology -->
+                            <div>
+                              <h3 class="mb-15px mt-5 md:mt-30px">
+                                <span
+                                  class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-2xl font-bold"
+                                >
+                                  The Role of Technology in Modern Logistics
+                                  Management
+                                </span>
+                              </h3>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                Welcome to our blog, where we celebrate our
+                                achievement as an AWS SaaS Competency Partner
+                                and share insights on how we accomplished this
+                                significant milestone.
+                              </p>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                As businesses unlock growth opportunities in the
+                                digital age, harnessing the power of cloud
+                                computing has become essential. Amazon Web
+                                Services (AWS) offers the AWS SaaS Competency
+                                Partner program, recognizing companies with
+                                exceptional expertise in delivering
+                                Software-as-a-Service solutions on the AWS
+                                platform.
+                              </p>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                In this blog, we will delve into the strategies,
+                                best practices, and key factors that accelerated
+                                our business growth and earned us the
+                                prestigious AWS SaaS Competency Partner status.
+                              </p>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                Explore the transformative impact of technology
+                                on logistics management. Discuss how
+                                technologies like IoT, AI, and blockchain are
+                                reshaping the industry and improving efficiency.
+                              </p>
+                            </div>
+
+                            <!-- keypoint -->
+                            <div class="mb-5">
+                              <h5 class="mb-10px mt-5 md:mt-30px">
+                                <span
+                                  class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-15 md:text-base lg:text-lg font-bold"
+                                >
+                                  Key Points
+                                </span>
+                              </h5>
+                              <ul>
+                                <li
+                                  class="pl-25px mb-10px relative before:content-['\f058'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold"
+                                >
+                                  <span
+                                    class="text-primary-color-light dark:text-white-color"
+                                  >
+                                    IoT and Real-Time Tracking</span
+                                  >
+                                </li>
+                                <li
+                                  class="pl-25px mb-10px relative before:content-['\f058'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold"
+                                >
+                                  <span
+                                    class="text-primary-color-light dark:text-white-color"
+                                  >
+                                    Artificial Intelligence in Route
+                                    Optimization and Predictive Analytics</span
+                                  >
+                                </li>
+                                <li
+                                  class="pl-25px mb-10px relative before:content-['\f058'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold"
+                                >
+                                  <span
+                                    class="text-primary-color-light dark:text-white-color"
+                                  >
+                                    Blockchain for Enhanced Transparency and
+                                    Security</span
+                                  >
+                                </li>
+                                <li
+                                  class="pl-25px relative before:content-['\f058'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold"
+                                >
+                                  <span
+                                    class="text-primary-color-light dark:text-white-color"
+                                  >
+                                    Warehouse Automation and Robotics</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- conclusion -->
+                            <div>
+                              <h3 class="mb-15px mt-5 md:mt-30px">
+                                <span
+                                  class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-2xl font-bold"
+                                >
+                                  Conclusion
+                                </span>
+                              </h3>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                Emphasize the long-term benefits of integrating
+                                sustainable practices into logistics operations,
+                                both for the planet and a company's reputation.
+                              </p>
+                              <p
+                                class="text-primary-color-light dark:text-white-color mb-15px md:mb-5"
+                              >
+                                These outlines can be expanded into
+                                comprehensive blog posts, each providing
+                                valuable insights and information on the
+                                respective topics.
+                              </p>
+                            </div>
+                            <!-- tags and social -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <div
+                  class="flex gap-5 md:gap-x-30px flex-wrap md:flex-nowrap py-30px mt-50px border-y border-border-color dark:border-gray-color-3"
+                >
+                  <!-- tags -->
+                  <div class="flex gap-x-5 md:gap-x-30px">
+                    <div>
+                      <h3>
+                        <span
+                          class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-2xl font-bold"
+                        >
+                          Tags:
+                        </span>
+                      </h3>
+                    </div>
+                    <div>
+                      <ul class="flex flex-wrap gap-10px items-center">
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Business</a
+                          >
+                        </li>
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Analysis</a
+                          >
+                        </li>
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Technology
+                          </a>
+                        </li>
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Design</a
+                          >
+                        </li>
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Business</a
+                          >
+                        </li>
+                        <li class="font-medium">
+                          <a
+                            href="#"
+                            class="py-11px px-15px bg-cream-light-color dark:bg-primary-color-light hover:bg-primary-color dark:hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color transition-all duration-500 rounded-50px leading-1"
+                            >Tips</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- socials -->
+                  <div>
+                    <ul class="flex gap-x-5">
+                      <li>
+                        <a
+                          href="https://www.facebook.com"
+                          class="text-primary-color dark:text-white-color border border-primary-color hover:bg-primary-color w-10 h-10 rounded-full flex items-center justify-center overflow-hidden"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://x.com"
+                          class="text-primary-color dark:text-white-color border border-primary-color hover:bg-primary-color w-10 h-10 rounded-full flex items-center justify-center overflow-hidden"
+                          ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com"
+                          class="text-primary-color dark:text-white-color border border-primary-color hover:bg-primary-color w-10 h-10 rounded-full flex items-center justify-center overflow-hidden"
+                          ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.pinterest.com"
+                          class="text-primary-color dark:text-white-color border border-primary-color hover:bg-primary-color w-10 h-10 rounded-full flex items-center justify-center overflow-hidden"
+                          ><i class="fa-brands fa-pinterest-p"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- prev next blog -->
+                <div
+                  class="py-30px border-b border-border-color dark:border-gray-color-3"
+                >
+                  <div
+                    class="flex flex-wrap md:flex-nowrap md:grid gap-5 xl:gap-30px md:grid-cols-2"
+                  >
+                    <!-- prev blog -->
+                    <div>
+                      <div
+                        class="group flex gap-x-5 max-w-355px md:max-w-full w-full relative overflow-hidden bg-cream-light-color dark:bg-primary-color-light px-5 py-30px md:px-25px md:py-35px"
+                      >
+                        <div>
+                          <a href="#" class="overflow-hidden w-85px h-85px">
+                            <img
+                              src="./assets/img/blog/1.jpg"
+                              alt=""
+                              class="w-85px h-85px"
+                          /></a>
+                        </div>
+                        <div>
+                          <div class="relative z-10">
+                            <button
+                              class="uppercase text-primary-color mb-1.5 inline-flex gap-2 items-center"
+                            >
+                              <i class="fa-regular fa-angle-double-left"></i>
+                              <span> previous</span>
+                            </button>
+                            <h3>
+                              <a
+                                href="#"
+                                class="text-primary-color-light dark:text-white-color hover:text-primary-color dark:hover:text-primary-color capitalize relative z-0 text-lg font-medium"
+                              >
+                                Building a Real Estate Website Tips and Ideas
+                              </a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- next blog -->
+                    <div class="ml-auto md:ml-0">
+                      <div
+                        class="group flex items-start gap-x-5 max-w-355px md:max-w-full w-full relative overflow-hidden bg-cream-light-color dark:bg-primary-color-light px-5 py-30px md:px-25px md:py-35px"
+                      >
+                        <div>
+                          <div class="relative z-10 flex flex-col items-end">
+                            <button
+                              class="uppercase text-primary-color mb-1.5 inline-flex gap-2 items-center"
+                            >
+                              <span> Next</span>
+                              <i class="fa-regular fa-angle-double-right"></i>
+                            </button>
+                            <h3>
+                              <a
+                                href="#"
+                                class="text-primary-color-light dark:text-white-color hover:text-primary-color dark:hover:text-primary-color capitalize relative z-0 text-lg font-medium text-end"
+                              >
+                                Architecture Is Not Based On Concrete And Steel
+                              </a>
+                            </h3>
+                          </div>
+                        </div>
+                        <div>
+                          <a href="#" class="overflow-hidden w-85px h-85px">
+                            <img
+                              src="./assets/img/blog/2.jpg"
+                              alt=""
+                              class="w-85px h-85px"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- comments -->
+
+                <div class="mt-50px">
+                  <h3
+                    class="mb-30px pb-3 relative after:w-60px after:h-0.5 after:bg-primary-color after:absolute after:bottom-0 after:left-0 z-1"
+                  >
+                    <span
+                      class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-3xl font-bold"
+                    >
+                      3 Comments
+                    </span>
+                  </h3>
+                  <!-- comments -->
+                  <div class="flex flex-col gap-y-30px">
+                    <!-- comment 1  -->
+                    <div
+                      class="group flex flex-col md:flex-row gap-5 relative overflow-hidden pb-30px border-b border-border-color dark:border-gray-color-3"
+                    >
+                      <div>
+                        <a href="#" class="overflow-hidden w-30">
+                          <img
+                            src="./assets/img/blog/user-1.jpg"
+                            alt=""
+                            class="w-full"
+                        /></a>
+                      </div>
+                      <div>
+                        <div class="relative z-10">
+                          <h3>
+                            <a
+                              href="#"
+                              class="text-primary-color-light dark:text-white-color hover:text-white-color dark:hover:text-primary-color capitalize relative z-0 text-lg md:text-size-22 font-bold mb-1.5"
+                            >
+                              Jane Doe
+                            </a>
+                          </h3>
+                          <p
+                            class="text-sm text-primary-color-light dark:text-white-color mb-15px"
+                          >
+                            January 3, 2024
+                          </p>
+                          <p
+                            class="text-primary-color-light dark:text-body-color mb-25px"
+                          >
+                            England dotted with a lush, green landscape, rustic
+                            villages and throbbing with humanity. South Asian
+                            country that has plenty to offer to visitors with
+                            its diverse wildlife.
+                          </p>
+                          <div>
+                            <a
+                              href="#"
+                              class="px-5 py-1 text-primary-color hover:text-white-color border border-primary-color hover:bg-primary-color inline-block"
+                              >Reply</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- nested -->
+                    <div class="pl-30px flex flex-col gap-y-30px">
+                      <!-- comment 2  -->
+                      <div
+                        class="group flex flex-col md:flex-row gap-5 relative overflow-hidden pb-30px border-b border-border-color dark:border-gray-color-3"
+                      >
+                        <div>
+                          <a href="#" class="overflow-hidden w-30">
+                            <img
+                              src="./assets/img/blog/user-2.jpg"
+                              alt=""
+                              class="w-full"
+                          /></a>
+                        </div>
+                        <div>
+                          <div class="relative z-10">
+                            <h3>
+                              <a
+                                href="#"
+                                class="text-primary-color-light dark:text-white-color hover:text-white-color dark:hover:text-primary-color capitalize relative z-0 text-lg md:text-size-22 font-bold mb-1.5"
+                              >
+                                Fred Bloggs
+                              </a>
+                            </h3>
+                            <p
+                              class="text-sm text-primary-color-light dark:text-white-color mb-15px"
+                            >
+                              February 3, 2024
+                            </p>
+                            <p
+                              class="text-primary-color-light dark:text-body-color mb-25px"
+                            >
+                              It is a long established fact that a reader will
+                              be distracted by the readable content of a page
+                              when looking at its layout. The point of using
+                              Lorem Ipsum is that it has a more-or-less normal
+                              distribution of letters, as opposed to using
+                              'Content here making it look like readable
+                              English.
+                            </p>
+                            <div>
+                              <a
+                                href="#"
+                                class="px-5 py-1 text-primary-color hover:text-white-color border border-primary-color hover:bg-primary-color inline-block"
+                                >Reply</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- comment 3  -->
+                      <div
+                        class="group flex flex-col md:flex-row gap-5 relative overflow-hidden pb-30px border-b border-border-color dark:border-gray-color-3"
+                      >
+                        <div>
+                          <a href="#" class="overflow-hidden w-30">
+                            <img
+                              src="./assets/img/blog/user-3.jpg"
+                              alt=""
+                              class="w-full"
+                          /></a>
+                        </div>
+                        <div>
+                          <div class="relative z-10">
+                            <h3>
+                              <a
+                                href="#"
+                                class="text-primary-color-light dark:text-white-color hover:text-white-color dark:hover:text-primary-color capitalize relative z-0 text-lg md:text-size-22 font-bold mb-1.5"
+                              >
+                                Jane Bloggs
+                              </a>
+                            </h3>
+                            <p
+                              class="text-sm text-primary-color-light dark:text-white-color mb-15px"
+                            >
+                              January 13, 2024
+                            </p>
+                            <p
+                              class="text-primary-color-light dark:text-body-color mb-25px"
+                            >
+                              But I must explain to you how all this mistaken
+                              idea of denouncing pleasure and praising pain was
+                              born and I will give you a complete account
+                            </p>
+                            <div>
+                              <a
+                                href="#"
+                                class="px-5 py-1 text-primary-color hover:text-white-color border border-primary-color hover:bg-primary-color inline-block"
+                                >Reply</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- comment 4  -->
+                    <div
+                      class="group flex flex-col md:flex-row gap-5 relative overflow-hidden pb-30px border-b border-border-color dark:border-gray-color-3"
+                    >
+                      <div>
+                        <a href="#" class="overflow-hidden w-30">
+                          <img
+                            src="./assets/img/blog/user-4.jpg"
+                            alt=""
+                            class="w-full"
+                        /></a>
+                      </div>
+                      <div>
+                        <div class="relative z-10">
+                          <h3>
+                            <a
+                              href="#"
+                              class="text-primary-color-light dark:text-white-color hover:text-white-color dark:hover:text-primary-color capitalize relative z-0 text-lg md:text-size-22 font-bold mb-1.5"
+                            >
+                              Themedemos
+                            </a>
+                          </h3>
+                          <p
+                            class="text-sm text-primary-color-light dark:text-white-color mb-15px"
+                          >
+                            January 20, 2024
+                          </p>
+                          <p
+                            class="text-primary-color-light dark:text-body-color mb-25px"
+                          >
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour, or randomised
+                            words which don't look even slightly believable. If
+                            you are going to use a passage you need to be sure
+                            there isn't anything embarrassing hidden in the
+                            middle of text. All the
+                          </p>
+                          <div>
+                            <a
+                              href="#"
+                              class="px-5 py-1 text-primary-color hover:text-white-color border border-primary-color hover:bg-primary-color inline-block"
+                              >Reply</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment form -->
+
+                <div class="mt-50px">
+                  <h3
+                    class="mb-30px pb-3 relative after:w-60px after:h-0.5 after:bg-primary-color after:absolute after:bottom-0 after:left-0 z-1"
+                  >
+                    <span
+                      class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-3xl font-bold"
+                    >
+                      Leave a Reply
+                    </span>
+                  </h3>
+                  <p class="text-primary-color-light dark:text-body-color mb-4">
+                    I design and code beautifully simple things and i love what
+                    i do. Just simple like that!
+                  </p>
+                  <!-- form -->
+                  <form>
+                    <div
+                      class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5"
+                    >
+                      <!--  name -->
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-primary-color-light focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
+                        />
+                      </div>
+                      <!-- email -->
+                      <div>
+                        <input
+                          type="email"
+                          placeholder="Enter Email"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-primary-color-light focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
+                        />
+                      </div>
+
+                      <div class="sm:col-start-1 sm:col-span-2">
+                        <div>
+                          <input
+                            type="text"
+                            placeholder="Enter Website"
+                            class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-primary-color-light focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
+                          />
+                        </div>
+                      </div>
+                      <div class="sm:col-start-1 sm:col-span-2">
+                        <textarea
+                          cols="1"
+                          rows="10"
+                          placeholder="Write Your Comments"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-primary-color-light focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
+                        ></textarea>
+                      </div>
+                      <div class="sm:col-start-1 sm:col-span-2 -mt-1">
+                        <label
+                          for="agreetocomment"
+                          class="text-primary-color-light dark:text-body-color flex items-center gap-2 mb-1"
+                        >
+                          <input type="checkbox" id="agreetocomment" />
+                          <span>
+                            Save my name, email, and website in this browser for
+                            the next time I comment.
+                          </span>
+                        </label>
+                      </div>
+                      <div class="sm:col-start-1 sm:col-span-2">
+                        <button
+                          type="submit"
+                          class="text-size-15 font-bold text-white-color capitalize py-17px px-35px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300"
+                        >
+                          Post Comment
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- sidebar -->
+              <div
+                class="sidebar lg:col-start-9 lg:col-span-4 pt-10 lg:pt-0 mt-60px lg:mt-0 border-t border-gray-color-3 lg:border-none"
+              >
+                <div class="flex flex-col gap-30px">
+                  <!-- search -->
+                  <div
+                    class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <form>
+                      <div class="flex">
+                        <!-- first name -->
+                        <div class="flex-grow">
+                          <input
+                            type="search"
+                            placeholder="Search..."
+                            class="text-white-color w-full pl-5 py-4 border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-l-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
+                          />
+                        </div>
+                        <div class="min-h-full">
+                          <button
+                            type="submit"
+                            class="w-60px h-full bg-primary-color hover:bg-seondary-color rounded-r-lg text-white-color text-xl inline-flex items-center justify-center transition-all duration-500"
+                          >
+                            <i class="fa-light fa-magnifying-glass"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- categories -->
+                  <div
+                    class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <h3
+                      class="mb-25px text-primary-color dark:text-white-color uppercase relative z-0 text-size-lg md:text-xl font-bold"
+                    >
+                      Categories
+                    </h3>
+                    <!-- list -->
+
+                    <ul>
+                      <li
+                        class="flex items-center justify-between gap-x-5 font-medium"
+                      >
+                        <a
+                          href="#"
+                          class="pb-2 md:pb-10px pt-0 text-primary-color-light dark:text-white-color hover:text-primary-color transition-all duration-500"
+                          >Business</a
+                        >
+                        <span class="text-primary-color">(4)</span>
+                      </li>
+                      <li
+                        class="flex items-center justify-between gap-x-5 font-medium"
+                      >
+                        <a
+                          href="#"
+                          class="py-2 md:py-10px text-primary-color-light dark:text-white-color hover:text-primary-color transition-all duration-500"
+                          >Analysis</a
+                        >
+                        <span class="text-primary-color">(0)</span>
+                      </li>
+                      <li
+                        class="flex items-center justify-between gap-x-5 font-medium"
+                      >
+                        <a
+                          href="#"
+                          class="py-2 md:py-10px text-primary-color-light dark:text-white-color hover:text-primary-color transition-all duration-500"
+                          >Technology</a
+                        >
+                        <span class="text-primary-color">(1)</span>
+                      </li>
+                      <li
+                        class="flex items-center justify-between gap-x-5 font-medium"
+                      >
+                        <a
+                          href="#"
+                          class="pt-2 md:pt-10px text-primary-color-light dark:text-white-color hover:text-primary-color transition-all duration-500"
+                          >Technology</a
+                        >
+                        <span class="text-primary-color">(10)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- recent blogs-->
+                  <div
+                    class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <h3
+                      class="mb-25px text-primary-color dark:text-white-color uppercase relative z-0 text-size-lg md:text-xl font-bold"
+                    >
+                      Recent post
+                    </h3>
+
+                    <div class="flex flex-col gap-y-30px">
+                      <div
+                        class="group flex gap-x-5 relative overflow-hidden bg-cream-light-color dark:bg-primary-color-light"
+                      >
+                        <div>
+                          <a
+                            href="blog-details.html"
+                            class="overflow-hidden w-20 h-20"
+                          >
+                            <img
+                              src="./assets/img/blog/post-thumb-1.jpg"
+                              alt=""
+                              class="w-20 h-20 group-hover:scale-110 transition-all duration-[.8s]"
+                          /></a>
+                        </div>
+
+                        <div>
+                          <div class="transition-all duration-500">
+                            <div class="relative z-0">
+                              <div class="relative z-10">
+                                <ul
+                                  class="flex gap-15px md:gap-25px items-center mb-5px"
+                                >
+                                  <li
+                                    class="text-primary-color dark:text-white-color transition-all duration-500"
+                                  >
+                                    <i
+                                      class="fa-light fa-calendar-days mr-1 text-primary-color"
+                                    ></i>
+                                    Jan 2024
+                                  </li>
+                                  <li>
+                                    <i
+                                      class="fa-light fa-comments mr-1 text-primary-color transition-all duration-500"
+                                    ></i>
+                                    <a
+                                      href="#"
+                                      class="text-primary-color dark:text-white-color hover:text-primary-color transition-all duration-500"
+                                    >
+                                      (3)</a
+                                    >
+                                  </li>
+                                </ul>
+                                <h3>
+                                  <a
+                                    href="blog-details.html"
+                                    class="text-primary-color-light dark:text-white-color hover:text-primary-color dark:hover:text-primary-color capitalize relative z-0 text-lg font-medium"
+                                  >
+                                    Definition and Principles of JIT Logistics
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="group flex gap-x-5 relative overflow-hidden bg-cream-light-color dark:bg-primary-color-light"
+                      >
+                        <div>
+                          <a
+                            href="blog-details.html"
+                            class="overflow-hidden w-20 h-20"
+                          >
+                            <img
+                              src="./assets/img/blog/post-thumb-2.jpg"
+                              alt=""
+                              class="w-20 h-20 group-hover:scale-110 transition-all duration-[.8s]"
+                          /></a>
+                        </div>
+
+                        <div>
+                          <div class="transition-all duration-500">
+                            <div class="relative z-0">
+                              <div class="relative z-10">
+                                <ul
+                                  class="flex gap-15px md:gap-25px items-center mb-5px"
+                                >
+                                  <li
+                                    class="text-primary-color dark:text-white-color transition-all duration-500"
+                                  >
+                                    <i
+                                      class="fa-light fa-calendar-days mr-1 text-primary-color"
+                                    ></i>
+                                    Jan 2024
+                                  </li>
+                                  <li>
+                                    <i
+                                      class="fa-light fa-comments mr-1 text-primary-color transition-all duration-500"
+                                    ></i>
+                                    <a
+                                      href="#"
+                                      class="text-primary-color dark:text-white-color hover:text-primary-color transition-all duration-500"
+                                    >
+                                      (3)</a
+                                    >
+                                  </li>
+                                </ul>
+                                <h3>
+                                  <a
+                                    href="blog-details.html"
+                                    class="text-primary-color-light dark:text-white-color hover:text-primary-color dark:hover:text-primary-color capitalize relative z-0 text-lg font-medium"
+                                  >
+                                    Real-world Examples of Successful JIT
+                                    Logistics
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="group flex gap-x-5 relative overflow-hidden bg-cream-light-color dark:bg-primary-color-light"
+                      >
+                        <div>
+                          <a
+                            href="blog-details.html"
+                            class="overflow-hidden w-20 h-20"
+                          >
+                            <img
+                              src="./assets/img/blog/post-thumb-3.jpg"
+                              alt=""
+                              class="w-20 h-20 group-hover:scale-110 transition-all duration-[.8s]"
+                          /></a>
+                        </div>
+
+                        <div>
+                          <div class="transition-all duration-500">
+                            <div class="relative z-0">
+                              <div class="relative z-10">
+                                <ul
+                                  class="flex gap-15px md:gap-25px items-center mb-5px"
+                                >
+                                  <li
+                                    class="text-primary-color dark:text-white-color transition-all duration-500"
+                                  >
+                                    <i
+                                      class="fa-light fa-calendar-days mr-1 text-primary-color"
+                                    ></i>
+                                    Jan 2024
+                                  </li>
+                                  <li>
+                                    <i
+                                      class="fa-light fa-comments mr-1 text-primary-color transition-all duration-500"
+                                    ></i>
+                                    <a
+                                      href="#"
+                                      class="text-primary-color dark:text-white-color hover:text-primary-color transition-all duration-500"
+                                    >
+                                      (3)</a
+                                    >
+                                  </li>
+                                </ul>
+                                <h3>
+                                  <a
+                                    href="blog-details.html"
+                                    class="text-primary-color-light dark:text-white-color hover:text-primary-color dark:hover:text-primary-color capitalize relative z-0 text-lg font-medium"
+                                  >
+                                    Real-world Examples of Successful JIT
+                                    Logistics
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- tags -->
+                  <div
+                    class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <h3
+                      class="mb-25px text-primary-color dark:text-white-color uppercase relative z-0 text-size-lg md:text-xl font-bold"
+                    >
+                      Popular tag
+                    </h3>
+                    <!-- list -->
+
+                    <ul class="flex flex-wrap gap-15px items-center">
+                      <li class="font-medium">
+                        <a
+                          href="#"
+                          class="py-10px px-15px hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color border border-gray-color-2 hover:border-primary-color transition-all duration-500 rounded-full leading-1"
+                          >Business</a
+                        >
+                      </li>
+                      <li class="font-medium">
+                        <a
+                          href="#"
+                          class="py-10px px-15px hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color border border-gray-color-2 hover:border-primary-color transition-all duration-500 rounded-full leading-1"
+                          >Analysis</a
+                        >
+                      </li>
+                      <li class="font-medium">
+                        <a
+                          href="#"
+                          class="py-10px px-15px hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color border border-gray-color-2 hover:border-primary-color transition-all duration-500 rounded-full leading-1"
+                          >Technology</a
+                        >
+                      </li>
+                      <li class="font-medium">
+                        <a
+                          href="#"
+                          class="py-10px px-15px hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color border border-gray-color-2 hover:border-primary-color transition-all duration-500 rounded-full leading-1"
+                          >Finance
+                        </a>
+                      </li>
+                      <li class="font-medium">
+                        <a
+                          href="#"
+                          class="py-10px px-15px hover:bg-primary-color text-primary-color hover:text-white-color dark:text-white-color border border-gray-color-2 hover:border-primary-color transition-all duration-500 rounded-full leading-1"
+                          >Design</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+       <!-- footer area -->
+  <footer>
+    <div class="footer-inner bg-seondary-color dark:bg-dark-color">
+      <div class="container">
+        <div class="flex flex-col items-center pt-50px pb-5 md:pt-60px">
+          <div class="footer-logo w-75px h-75px mb-6">
+            <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
+          </div>
+          <!-- nav -->
+          <div>
+            <ul class="nav flex flex-wrap justify-center items-center gap-x-35px">
+
+              <li class="nav_item group relative">
+                <a href="index.html#services"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Services
+                </a>
+              </li>
+              <li class="nav_item group relative">
+                <a href="index.html#portfolio"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Portfolios
+                </a>
+              </li>
+
+              <li class="nav_item group relative">
+                <a href="index.html#resume"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Experience
+                </a>
+              </li>
+              <li class="nav_item group relative">
+                <a href="index.html#skills"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Skills
+                </a>
+              </li>
+
+              <li class="nav_item group relative">
+                <a href="index.html#blogs"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright text-gray-color whitespace-nowrap text-sm md:text-base mt-5">
+            © 2024 All rights reserved by
+            <a href="index.html" class="text-white-color hover:text-primary-color">ThemeJunction</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- JSS here -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/gsap-scroll-to-plugin.min.js"></script>
+    <script src="./assets/js/gsap-scroll-trigger.min.js"></script>
+    <script src="./assets/js/gsap-split-text.min.js"></script>
+    <script src="./assets/js/appear.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/odometer.min.js"></script>
+    <script src="./assets/js/imagesloaded-pkgd.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/nice-select.min.js"></script>
+    <script src="./assets/js/backToTop.js"></script>
+    <script src="./assets/js/lenis.min.js"></script>
+    <script src="./assets/js/lightcase.js"></script>
+    <script src="./assets/js/theme-controller.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

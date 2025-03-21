@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Service Details - Gerold - Personal Portfolio Tailwind CSS Template
+  </title>
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="./assets/css/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/font-awesome-pro.min.css" />
+  <link rel="stylesheet" href="./assets/css/flaticon_gerold.css" />
+  <link rel="stylesheet" href="./assets/css/nice-select.css" />
+  <link rel="stylesheet" href="./assets/css/backToTop.css" />
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="./assets/css/odometer-theme-default.css" />
+  <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="./assets/css/nice-select.css" />
+  <link rel="stylesheet" href="./assets/css/backToTop.css" />
+  <link rel="stylesheet" href="./assets/css/lightcase.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="font-sora dark:bg-dark-color">
+  <!-- Preloader Area Start -->
+  <div class="preloader">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg>
+
+    <div class="preloader-heading">
+      <div class="load-text">
+        <span>L</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader Area End -->
+  <!-- theme controller -->
+  <div class="fixed top-[200px] lg:top-[300px] transition-all duration-300 right-[-50px] hover:right-0 z-4xl">
+    <button
+      class="theme-controller w-90px h-10 bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-l-full text-whiteColor px-10px flex items-center transition-all duration-300 font-sora">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-10px w-5 block dark:hidden" viewBox="0 0 512 512">
+        <path
+          d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+          fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+      </svg>
+      <span class="text-base block dark:hidden">Dark</span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="hidden mr-10px w-5 dark:block" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+          d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94">
+        </path>
+        <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+          stroke-width="32"></circle>
+      </svg>
+      <span class="text-base hidden dark:block">Light</span>
+    </button>
+  </div>
+  <!-- start: Back To Top -->
+  <div class="progress-wrap" id="scrollUp">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- header area  -->
+  <header class="header-area header-absolute">
+    <div class="pt-15px xl:pt-5 pb-5 md:pb-30px xl:pb-5 relative">
+      <div class="container">
+        <div class="flex flex-wrap justify-between items-center">
+          <!-- logo and contact email -->
+          <div>
+            <ul class="flex items-center gap-x-15px xl:gap-x-35px">
+              <li>
+                <a href="index.html" class="logo">
+                  <img class="w-15 h-15 inline-block" src="./assets/img/logo/logo.png" alt="" />
+                </a>
+              </li>
+              <li class="hidden md:block">
+                <a href="mailto:mail@gerolddesign.com"
+                  class="text-size-15 font-medium text-white-color">mail@gerolddesign.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- main menu -->
+          <nav>
+            <ul class="nav flex items-center gap-x-5 xl:gap-x-30px 2xl:gap-x-45px">
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#services"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Services
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#portfolio"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Works
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#resume"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Resume
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#skills"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Skills
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#testimonials"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Testimonials
+                </a>
+              </li>
+
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#contact"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Contact
+                </a>
+              </li>
+              <!-- action button -->
+              <li>
+                <a href="#"
+                  class="text-size-15 font-bold text-white-color capitalize py-17px px-35px ml-10px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300">Hire
+                  Me!</a>
+              </li>
+              <!-- open mobile menu button -->
+              <li class="menu-bar lg:hidden">
+                <div class="menu-bar">
+                  <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <!-- scale-y-0 transition-all duration-500 hover:scale-y-100 -->
+      <div
+        class="mobile-menu absolute left-0 top-full min-h-screen-90 w-full bg-seondary-color block origin-top-left lg:hidden">
+        <div class="container py-5">
+          <ul class="ml-4">
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#services">
+                Services
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#portfolio">
+                Works
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#resume">
+                Resume
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#skills">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#testimonials">
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- sticky -->
+  <header class="header-area header-2 header-sticky">
+    <div class="py-10px relative">
+      <div class="container">
+        <div class="flex flex-wrap justify-between items-center">
+          <!-- logo and contact email -->
+          <div>
+            <ul class="flex items-center gap-x-15px xl:gap-x-35px">
+              <li>
+                <a href="index.html" class="logo">
+                  <img class="w-15 h-15 hidden dark:inline-block" src="./assets/img/logo/logo.png" alt="" />
+                  <img class="w-15 h-15 inlin-block dark:hidden" src="./assets/img/logo/logo-dark.png" alt="" />
+                </a>
+              </li>
+              <li class="hidden md:block">
+                <a href="mailto:mail@gerolddesign.com"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color">mail@gerolddesign.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- main menu -->
+          <nav>
+            <ul class="nav flex items-center gap-x-5 xl:gap-x-30px 2xl:gap-x-45px">
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#services"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Services
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#portfolio"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Works
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#resume"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Resume
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#skills"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Skills
+                </a>
+              </li>
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#testimonials"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Testimonials
+                </a>
+              </li>
+
+              <li class="nav_item group relative hidden lg:block">
+                <a href="index.html#contact"
+                  class="text-size-15 font-medium text-seondary-color dark:text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Contact
+                </a>
+              </li>
+              <!-- action button -->
+              <li>
+                <a href="#"
+                  class="text-size-15 font-bold text-white-color capitalize py-17px px-35px ml-10px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300">Hire
+                  Me!</a>
+              </li>
+              <!-- open mobile menu button -->
+              <li class="menu-bar lg:hidden">
+                <div class="menu-bar">
+                  <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <!-- scale-y-0 transition-all duration-500 hover:scale-y-100 -->
+      <div
+        class="mobile-menu absolute left-0 top-full min-h-screen-90 w-full bg-seondary-color block origin-top-left lg:hidden">
+        <div class="container py-5">
+          <ul class="ml-4">
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#services">
+                Services
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#portfolio">
+                Works
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#resume">
+                Resume
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#skills">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#testimonials">
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a class="text-size-25 text-white-color uppercase leading-1.2 py-15px" href="index.html#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-wrapper">
+    <!-- breadcrumb -->
+    <section>
+      <div
+        class="hero-breadcurmb pt-150px md:pt-40 lg:pt-200px pb-50px md:pb-60px lg:b-100px bg-[url('../img/breadcrumb/breadcrumb-bg.jpg')] bg-cover bg-center bg-no-repeat relative z-1 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-primary-color-light after:-z-1 after:opacity-70">
+        <div class="container">
+          <div class="flex flex-col items-center">
+            <h1 class="text-size-35 md:text-size-40 lg:text-size-50 font-bold text-white-color mb-15px">
+              Service Details
+            </h1>
+            <!-- breadcrumbs -->
+            <ul class="nav flex items-center gap-x-10px">
+              <li class="nav_item group relative">
+                <a href="index.html"
+                  class="font-medium text-white-color capitalize relative z-0 after:w-0 after:h-1px after:bg-white-color after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-500 group-hover:after:w-full">Home
+                </a>
+              </li>
+              <li class="nav_item group relative">
+                <p class="font-medium text-white-color capitalize relative flex items-center gap-10px">
+                  <i class="far fa-long-arrow-right"></i> Service Details
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service details area -->
+    <section id="blogs">
+      <div class="py-60px md:py-20 lg:py-100px xl:py-30 dark:bg-black-color">
+        <div class="container">
+          <div class="lg:grid lg:gap-6 lg:grid-cols-12">
+            <!-- service details -->
+            <div class="lg:col-start-1 lg:col-span-8">
+              <div class="group relative flex flex-col items-center wow fadeInUp" data-wow-delay=".3s">
+                <div class="rounded-lg relative overflow-hidden">
+                  <div class="rounded-t-lg overflow-hidden">
+                    <img src="./assets/img/services/modal-img.jpg" alt="" />
+                  </div>
+
+                  <div class="pt-30px md:pt-10">
+                    <div class="transition-all duration-500">
+                      <div class="relative z-0">
+                        <div class="relative z-10">
+                          <h3 class="mb-15px md:mb-5">
+                            <span
+                              class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-35 md:text-size-40 lg:text-size-45 font-bold">
+                              UI/UX Design
+                            </span>
+                          </h3>
+
+                          <p class="text-primary-color-light dark:text-white-color mb-15px md:mb-5">
+                            Elizabeth some dodgy chavs are you taking the piss
+                            faff about pardon amongst car boot a load of old
+                            tosh is cracking goal blow off telling brown.
+                          </p>
+                          <p class="text-primary-color-light dark:text-white-color mb-15px md:mb-5">
+                            Brolly show off show off pick your nose and blow
+                            off well A bit of how’s your father tomfoolery
+                            blimey, me old mucker starkers Queen’s English
+                            dropped a clanger bite your arm spiffing good time
+                            burke Why chancer. Hotpot bum bag cracking goal
+                            young delinquent naff bugger cup of chars bender
+                            loo it’s all gone to pot the nancy cheeky.
+                          </p>
+                          <p class="text-primary-color-light dark:text-white-color mb-15px md:mb-5">
+                            At public school cras bog some dodgy chav Richard
+                            Why argy bargy vagabon William bender matie boy,
+                            off his nut chancer Jeffrey up the kyver say mufty
+                            you mug ummm telling pear shaped Oxford owt to do
+                            with me do one so said are you taking his.
+                          </p>
+                          <!-- process -->
+                          <div>
+                            <h3 class="mb-15px md:mb-5">
+                              <span
+                                class="text-primary-color-light dark:text-white-color capitalize relative z-0 text-size-22 md:text-3xl font-bold">
+                                Services Process
+                              </span>
+                            </h3>
+                            <p class="text-primary-color-light dark:text-white-color mb-15px md:mb-5">
+                              Elizabeth some dodgy chavs are you taking the
+                              piss faff about pardon amongst car boot a load
+                              of old tosh is cracking goal blow off telling
+                              brown.
+                            </p>
+
+                            <ul class="grid gap-x-5 md:gap-x-30px grid-col1 sm:grid-cols-2">
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Reinvent Your Business to Better</span>
+                              </li>
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Pioneering the Internet's First</span>
+                              </li>
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Pioneering the Design World's First</span>
+                              </li>
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Pioneering the Design World's First</span>
+                              </li>
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Pioneering the Design World's First</span>
+                              </li>
+                              <li
+                                class="pl-25px mb-10px relative before:content-['\f00c'] before:font-fontawesome before:absolute before:left-0 before:top-0 before:text-primary-color before:font-bold">
+                                <span class="text-primary-color-light dark:text-white-color">
+                                  Pioneering the Design World's First</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sidebar -->
+            <div
+              class="sidebar lg:col-start-9 lg:col-span-4 pt-50px lg:pt-0 mt-10 lg:mt-0 border-t border-border-color dark:border-gray-color-3 lg:border-none">
+              <div class="flex flex-col gap-30px">
+                <!-- All Services -->
+                <div
+                  class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                  data-wow-delay=".3s">
+                  <h3
+                    class="mb-25px text-primary-color dark:text-white-color uppercase relative z-0 text-size-lg md:text-xl font-bold">
+                    Categories
+                  </h3>
+                  <!-- list -->
+
+                  <ul class="sidebar-categories">
+                    <li class="mb-2 active">
+                      <button
+                        class="px-5 pt-15px pb-3 rounded-lg hover:bg-seondary-color text-primary-color-light dark:text-white-color hover:text-white-color transition-all duration-500 flex items-center justify-between gap-x-5 w-full group">
+                        <span class="inline-flex gap-1 items-start">
+                          <i class="flaticon-design mr-10px text-size-25 leading-1"></i>
+                          Web Development</span>
+                        <span
+                          class="text-primary-color-light dark:text-white-color group-hover:text-white-color leading-1 transition-none duration-500"><i
+                            class="fas fa-angle-right"></i></span>
+                      </button>
+                    </li>
+                    <li class="mb-2">
+                      <button
+                        class="px-5 pt-15px pb-3 rounded-lg hover:bg-seondary-color text-primary-color-light dark:text-white-color hover:text-white-color transition-all duration-500 flex items-center justify-between gap-x-5 w-full group">
+                        <span class="inline-flex gap-1 items-start">
+                          <i class="flaticon-ux-design mr-10px text-size-25 leading-1"></i>
+                          UI/UX Design</span>
+                        <span
+                          class="text-primary-color-light dark:text-white-color group-hover:text-white-color leading-1 transition-none duration-500"><i
+                            class="fas fa-angle-right"></i></span>
+                      </button>
+                    </li>
+                    <li class="mb-2">
+                      <button
+                        class="px-5 pt-15px pb-3 rounded-lg hover:bg-seondary-color text-primary-color-light dark:text-white-color hover:text-white-color transition-all duration-500 flex items-center justify-between gap-x-5 w-full group">
+                        <span class="inline-flex gap-1 items-start">
+                          <i class="flaticon-web-design mr-10px text-size-25 leading-1"></i>
+                          Content Writing</span>
+                        <span
+                          class="text-primary-color-light dark:text-white-color group-hover:text-white-color leading-1 transition-none duration-500"><i
+                            class="fas fa-angle-right"></i></span>
+                      </button>
+                    </li>
+                    <li class="mb-2">
+                      <button
+                        class="px-5 pt-15px pb-3 rounded-lg hover:bg-seondary-color text-primary-color-light dark:text-white-color hover:text-white-color transition-all duration-500 flex items-center justify-between gap-x-5 w-full group">
+                        <span class="inline-flex gap-1 items-start">
+                          <i class="flaticon-3d-movie mr-10px text-size-25 leading-1"></i>
+                          Digital Marketing</span>
+                        <span
+                          class="text-primary-color-light dark:text-white-color group-hover:text-white-color leading-1 transition-none duration-500"><i
+                            class="fas fa-angle-right"></i></span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- get in tuouch -->
+                <div
+                  class="px-15px md:px-25px py-30px bg-cream-light-color dark:bg-primary-color-light rounded-lg wow fadeInUp"
+                  data-wow-delay=".3s">
+                  <form>
+                    <h3
+                      class="mb-25px text-primary-color dark:text-white-color uppercase relative z-0 text-size-lg md:text-xl font-bold">
+                      Get in Touch
+                    </h3>
+                    <div class="flex flex-col gap-10px">
+                      <!-- name -->
+                      <div>
+                        <input type="text" placeholder="Name"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1" />
+                      </div>
+                      <!-- name -->
+                      <div>
+                        <input type="email" placeholder="Email"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1" />
+                      </div>
+                      <div>
+                        <textarea cols="1" rows="10" placeholder="Your Message"
+                          class="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"></textarea>
+                      </div>
+                      <div class="sm:col-start-1 sm:col-span-2">
+                        <button type="submit"
+                          class="text-size-15 font-bold text-white-color capitalize py-17px px-35px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300 w-full text-center">
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer area -->
+  <footer>
+    <div class="footer-inner bg-seondary-color dark:bg-dark-color">
+      <div class="container">
+        <div class="flex flex-col items-center pt-50px pb-5 md:pt-60px">
+          <div class="footer-logo w-75px h-75px mb-6">
+            <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
+          </div>
+          <!-- nav -->
+          <div>
+            <ul class="nav flex flex-wrap justify-center items-center gap-x-35px">
+
+              <li class="nav_item group relative">
+                <a href="index.html#services"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Services
+                </a>
+              </li>
+              <li class="nav_item group relative">
+                <a href="index.html#portfolio"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Portfolios
+                </a>
+              </li>
+
+              <li class="nav_item group relative">
+                <a href="index.html#resume"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Experience
+                </a>
+              </li>
+              <li class="nav_item group relative">
+                <a href="index.html#skills"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Skills
+                </a>
+              </li>
+
+              <li class="nav_item group relative">
+                <a href="index.html#blogs"
+                  class="text-size-15 font-medium text-white-color capitalize py-10px md:py-15px lg:py-25px 2xl:py-30px relative z-0 after:w-0 after:h-0.5 after:bg-gradient-primary after:absolute after:right-0 hover:after:left-0 after:bottom-[10px] md:after:bottom-[15px] lg:after:bottom-[25px] after:transition-all after:duration-500 group-hover:after:w-full">Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright text-gray-color whitespace-nowrap text-sm md:text-base mt-5">
+            © 2024 All rights reserved by
+            <a href="index.html" class="text-white-color hover:text-primary-color">ThemeJunction</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JSS here -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/gsap-scroll-to-plugin.min.js"></script>
+  <script src="./assets/js/gsap-scroll-trigger.min.js"></script>
+  <script src="./assets/js/gsap-split-text.min.js"></script>
+  <script src="./assets/js/appear.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/odometer.min.js"></script>
+  <script src="./assets/js/imagesloaded-pkgd.js"></script>
+  <script src="./assets/js/isotope.pkgd.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/nice-select.min.js"></script>
+  <script src="./assets/js/backToTop.js"></script>
+  <script src="./assets/js/lenis.min.js"></script>
+  <script src="./assets/js/lightcase.js"></script>
+  <script src="./assets/js/theme-controller.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

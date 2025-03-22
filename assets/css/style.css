@@ -18,6 +18,10 @@
   background-image: url(./assets/images/main.jpg);
 }
 
+body{
+  background-color: #dddddd;
+}
+
 .font-outfit {
   font-family: Outfit, sans-serif;
 }

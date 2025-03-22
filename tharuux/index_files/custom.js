@@ -227,6 +227,10 @@ $(function(){
 		}
 	});
 
+    $("body").on("touchmove", function(e) {
+        e.preventDefault(); // This can block scrolling on mobile
+    });
+
 	$(document.body).on("touchstart", ".outer-wrapper", function (e) {
 		if( $body.hasClass("zoomed-out") ){			
 			setTimeout(function(){

@@ -157,6 +157,12 @@ p {
 
 img {
   max-width: 100%;
+  object-fit: cover;
+}
+
+html, body {
+  overflow: auto !important; /* Ensure scrolling is enabled */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 /* 2. Universal classes */

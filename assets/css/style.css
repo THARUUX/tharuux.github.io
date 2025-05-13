@@ -13,17 +13,47 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
 .main {
   background-image: url(./assets/images/main.jpg);
+}
+
+html, body {
+  height: auto;
+  overflow: auto;
+  cursor: none;
+}
+
+a{
+  cursor:  none !important;
 }
 
 body{
   background-color: #ffffff;
 }
 
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+.header-font {
+  font-family: "Host Grotesk", sans-serif !important;
+}
+
 .font-outfit {
-  font-family: Outfit, sans-serif;
+  font-family: "Outfit", sans-serif !important;
+}
+
+.nice-select{
+  border: 0px !important;
+}
+
+.w-60{
+  width: 60%;
 }
 
 .stroke-text {
@@ -60,6 +90,10 @@ body{
   color: #6731d4;
 }
 
+
+.justify-around{
+  justify-content: space-around;
+}
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -1659,7 +1693,7 @@ video {
 }
 
 .bg-gradient-text-light{
-  background-image: linear-gradient(to right, #8750f7 0%, #5900ff 100%);
+  background-image: linear-gradient(to left, #4E65FF 0%, #8750f7 100%);
 }
 
 .bg-200{
@@ -4036,6 +4070,10 @@ body.loaded {
 
   .md\:col-span-7{
     grid-column: span 7 / span 7;
+  }
+
+  .md\:w-60{
+    width: 60%;
   }
 
   .md\:col-start-1{

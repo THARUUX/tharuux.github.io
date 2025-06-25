@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharuux - Photo Gallery | Creative Web Developer from Sri Lanka</title>
+  <meta name="description" content="Explore the official photo gallery of Tharuux – a creative full-stack web developer from Sri Lanka. View professional images and brand visuals.">
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tharuux Damsara" />
+  <meta name="keywords" content="Tharuux, Web Developer Sri Lanka, Full-stack Developer, Tharuux Images, Tharuux Gallery" />
+  <link rel="canonical" href="https://tharuux.click/gallery" />
+</head>
+
+<style>
+/* [same CSS from your original post — no changes required] */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #070707;
+  background: #fff;
+
+  /* Use whichever works best for you */
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  min-block-size: 100svh;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  display: grid;
+  grid-template-columns:
+    [sidebar-start]
+    0rem
+    [sidebar-end main-start]
+    1fr
+    [main-end];
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-block-end: 1rem;
+}
+
+.sidebar {
+  grid-column: sidebar;
+  color: #fff;
+  background-color: #1d1d29;
+  display: flex;
+  position: fixed;
+  left: 0px;
+  width: 5%;
+  height: 100vh;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  line-height: 1.5;
+  rotate: -90deg;
+  height: fit-content;
+}
+
+.main {
+  grid-column: main;
+  padding: 1.25rem;
+}
+
+/* Photo Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-auto-rows: 12.5rem;
+  grid-auto-flow: dense;
+  gap: 0.75rem;
+}
+
+.gallery figure {
+  /* container-type: inline-size; */
+  container: figure / inline-size;
+  overflow: hidden;
+
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
+
+  /*
+    Because 1fr = minmax(auto, 1fr),
+    to prevent the grid blowout,
+    set the minimum to zero.
+  */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.gallery img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+  /* grid-row: 1 / -1; */
+  /* grid-column: 1 / -1; */
+  grid-area: 1 / 1 / -1 / -1;
+
+  transition: scale 1s ease-in-out;
+}
+
+.gallery figure:hover img {
+  scale: 1.125;
+}
+
+.gallery figcaption {
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: end;
+  z-index: 1;
+
+  padding: 3em 15% 1em 1em;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  background: linear-gradient(transparent 25%, rgb(0 0 0 / 0.75));
+  display: none;
+}
+
+@container figure (width > 20rem) {
+  .gallery figcaption {
+    display: block;
+  }
+}
+
+.gallery figcaption h3 {
+  font-size: 1.0625rem;
+}
+
+.gallery figcaption p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (width > 600px) {
+  .gallery figure:nth-child(1) {
+    grid-area: span 2 / span 2;
+  }
+
+  .gallery figure:nth-child(4n + 1) {
+    grid-row: span 2;
+  }
+
+  .gallery figure:nth-child(4n + 2) {
+    grid-column: span 2;
+  }
+}
+</style>
+
+<body>
+<main class="main">
+  <h1>Tharuux – Photo Gallery</h1>
+
+  <div class="gallery">
+    <figure>
+      <img src="assets/images/tharuux_image_1.jpg" alt="Tharuux posing confidently for a branding photo" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux_logo.png" alt="Official Tharuux logo in blue and black" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux_profile_image.png" alt="Tharuux profile image for social media and branding" loading="lazy" />
+    </figure>
+    
+    <figure>
+      <img src="assets/images/tharuux_image_5.jpg" alt="Candid photo of Tharuux working on a laptop" loading="lazy" />
+    </figure>
+    <figure>
+      <img src="assets/images/tharuux main image.jpg" alt="Tharuux main branding image" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux at galle fort.jpg" alt="Tharuux standing at Galle Fort, Sri Lanka" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux_image_2.jpg" alt="Creative portrait of Tharuux" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux_image_3.jpg" alt="Black and white portrait of Tharuux" loading="lazy" />
+    </figure>
+
+    <figure>
+      <img src="assets/images/tharuux_image_4.jpg" alt="Smiling Tharuux in casual wear" loading="lazy" />
+    </figure>
+
+  </div>
+</main>
+</body>
+</html>

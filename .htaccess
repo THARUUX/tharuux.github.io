@@ -1,0 +1,64 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# --------------------------
+# Canonical Redirect to https://tharuux.click
+# --------------------------
+RewriteCond %{HTTP_HOST} ^www\.tharuux\.click$ [NC]
+RewriteRule ^(.*)$ https://tharuux.click/$1 [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --------------------------
+# SEO Friendly URLs
+# --------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# --------------------------
+# Compression & Caching
+# --------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript application/json
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+
+# --------------------------
+# Security Headers
+# --------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "DENY"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=()"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# --------------------------
+# Prevent Directory Browsing
+# --------------------------
+Options -Indexes
+
+# --------------------------
+# Custom Error Pages (Optional)
+# --------------------------
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+
+
+RewriteRule ^gallery$ gallery.html [L]
